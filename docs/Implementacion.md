@@ -79,7 +79,7 @@ El usuario va a poder jugar en un entorno 3D estable con gráficos modernos, ver
 #### Tarea F1-4: HUD Básico
 [ ] **A-036:** Crear Canvas en escena
 [ ] **A-037:** Añadir Slider para vida
-[ ] **A-038:** |Crear script HealthBarUI.cs
+[ ] **A-038:** Crear script HealthBarUI.cs
 [ ] **A-039:** Vincular HealthBarUI con Player
 [ ] **A-040:** Testear visualización de vida
 
