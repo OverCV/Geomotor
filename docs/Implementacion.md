@@ -7,7 +7,16 @@ Documento maestro de implementación para GeoMotor. Define sprints, actividades,
 - **Sprint (S):** Período de desarrollo (1-2 semanas)
 - **Fase (F):** Objetivo principal del sprint (F0, F1, etc.)
 - **Tarea (T):** Componente específico a desarrollar
-- **Acción (A):** Paso concreto y verificable (A-001, A-002, etc.)
+- **Acción (X-YYY):** Paso concreto y verificable (A-001, B-004, etc.)
+  - **A:** Sprint S0 (Fundación)
+  - **B:** Sprint S1 (Kinect)
+  - **C:** Sprint S2 (Input System)
+  - **D:** Sprint S3 (Portales/Interactividad)
+  - **E:** Sprint S4 (Analíticas/Base de Datos)
+  - **F:** Sprint S5 (Sistema de Vehículos)
+  - **G:** Sprint S6 (Datos/Configuración)
+  - **H:** Sprint S7 (Pulido/Optimización)
+  - **I:** Sprint S8 (Entrega Final)
 
 ## Sprint S0: Fundación del Proyecto (Semana 1)
 
@@ -100,46 +109,46 @@ El usuario va a poder controlar el juego con movimientos corporales usando Kinec
 ### Fase F1: Integración Kinect
 
 #### Tarea T8: Configuración de SDK
-[ ] **A-041:** Instalar Azure Kinect Sensor SDK
-[ ] **A-042:** Instalar Azure Kinect Body Tracking SDK
-[ ] **A-043:** Verificar compatibilidad de hardware
-[ ] **A-044:** Configurar drivers y permisos
-[ ] **A-045:** Testear conexión del sensor
+[ ] **B-001:** Instalar Azure Kinect Sensor SDK
+[ ] **B-002:** Instalar Azure Kinect Body Tracking SDK
+[ ] **B-003:** Verificar compatibilidad de hardware
+[ ] **B-004:** Configurar drivers y permisos
+[ ] **B-005:** Testear conexión del sensor
 
 #### Tarea T9: KinectManager
-[ ] **A-046:** Crear script KinectManager.cs
-[ ] **A-047:** Implementar inicialización del sensor
-[ ] **A-048:** Configurar streams (depth, body)
-[ ] **A-049:** Implementar detección de cuerpos
-[ ] **A-050:** Añadir manejo de errores y fallback
+[ ] **B-006:** Crear script KinectManager.cs
+[ ] **B-007:** Implementar inicialización del sensor
+[ ] **B-008:** Configurar streams (depth, body)
+[ ] **B-009:** Implementar detección de cuerpos
+[ ] **B-010:** Añadir manejo de errores y fallback
 
 #### Tarea T10: PoseDetector
-[ ] **A-051:** Crear script PoseDetector.cs
-[ ] **A-052:** Implementar detección de 4 poses básicas
-[ ] **A-053:** Configurar umbrales y tiempos
-[ ] **A-054:** Añadir smoothing de joints
-[ ] **A-055:** Testear precisión de detección
+[ ] **B-011:** Crear script PoseDetector.cs
+[ ] **B-012:** Implementar detección de 4 poses básicas
+[ ] **B-013:** Configurar umbrales y tiempos
+[ ] **B-014:** Añadir smoothing de joints
+[ ] **B-015:** Testear precisión de detección
 
 #### Tarea T11: KinectInputProvider
-[ ] **A-056:** Crear script KinectInputProvider.cs
-[ ] **A-057:** Mapear poses a acciones del juego
-[ ] **A-058:** Integrar con Input System existente
-[ ] **A-059:** Implementar fallback a teclado
-[ ] **A-060:** Añadir configuración de sensibilidad
+[ ] **B-016:** Crear script KinectInputProvider.cs
+[ ] **B-017:** Mapear poses a acciones del juego
+[ ] **B-018:** Integrar con Input System existente
+[ ] **B-019:** Implementar fallback a teclado
+[ ] **B-020:** Añadir configuración de sensibilidad
 
 #### Tarea T12: KinectConfig
-[ ] **A-061:** Crear script KinectConfig.cs (ScriptableObject)
-[ ] **A-062:** Definir parámetros de detección
-[ ] **A-063:** Configurar umbrales por pose
-[ ] **A-064:** Añadir opciones de rendimiento
-[ ] **A-065:** Crear asset KinectConfig.asset
+[ ] **B-021:** Crear script KinectConfig.cs (ScriptableObject)
+[ ] **B-022:** Definir parámetros de detección
+[ ] **B-023:** Configurar umbrales por pose
+[ ] **B-024:** Añadir opciones de rendimiento
+[ ] **B-025:** Crear asset KinectConfig.asset
 
 #### Tarea T13: Debug y Visualización
-[ ] **A-066:** Crear KinectDebugOverlay
-[ ] **A-067:** Visualizar joints en tiempo real
-[ ] **A-068:** Mostrar poses detectadas
-[ ] **A-069:** Añadir métricas de rendimiento
-[ ] **A-070:** Testear visualización en Editor
+[ ] **B-026:** Crear KinectDebugOverlay
+[ ] **B-027:** Visualizar joints en tiempo real
+[ ] **B-028:** Mostrar poses detectadas
+[ ] **B-029:** Añadir métricas de rendimiento
+[ ] **B-030:** Testear visualización en Editor
 
 ### DoD Sprint S1
 **El usuario va a poder:**
@@ -169,39 +178,39 @@ El usuario va a poder jugar con teclado o gamepad según su preferencia, pausar 
 ### Fase F2: Input System y Pausa
 
 #### Tarea T14: Input Actions Asset
-[ ] **A-071:** Crear InputSystem_Actions.inputactions
-[ ] **A-072:** Definir Action Map "Player"
-[ ] **A-073:** Configurar acciones Move, JumpOrAscend, Pause
-[ ] **A-074:** Añadir bindings para teclado
-[ ] **A-075:** Añadir bindings para gamepad
+[ ] **C-001:** Crear InputSystem_Actions.inputactions
+[ ] **C-002:** Definir Action Map "Player"
+[ ] **C-003:** Configurar acciones Move, JumpOrAscend, Pause
+[ ] **C-004:** Añadir bindings para teclado
+[ ] **C-005:** Añadir bindings para gamepad
 
 #### Tarea T15: InputManager
-[ ] **A-076:** Crear script InputManager.cs
-[ ] **A-077:** Implementar PlayerInput component
-[ ] **A-078:** Configurar comportamiento "Invoke Unity Events"
-[ ] **A-079:** Vincular eventos con controladores
-[ ] **A-080:** Testear input de teclado y gamepad
+[ ] **C-006:** Crear script InputManager.cs
+[ ] **C-007:** Implementar PlayerInput component
+[ ] **C-008:** Configurar comportamiento "Invoke Unity Events"
+[ ] **C-009:** Vincular eventos con controladores
+[ ] **C-010:** Testear input de teclado y gamepad
 
 #### Tarea T16: Sistema de Pausa
-[ ] **A-081:** Implementar lógica de pausa en GameManager
-[ ] **A-082:** Crear UI de pausa
-[ ] **A-083:** Añadir botones continuar/salir
-[ ] **A-084:** Configurar Time.timeScale
-[ ] **A-085:** Testear pausa y reanudación
+[ ] **C-011:** Implementar lógica de pausa en GameManager
+[ ] **C-012:** Crear UI de pausa
+[ ] **C-013:** Añadir botones continuar/salir
+[ ] **C-014:** Configurar Time.timeScale
+[ ] **C-015:** Testear pausa y reanudación
 
 #### Tarea T17: Reasignación de Controles
-[ ] **A-086:** Implementar sistema de rebinding
-[ ] **A-087:** Crear UI de configuración
-[ ] **A-088:** Guardar configuración en PlayerPrefs
-[ ] **A-089:** Cargar configuración al inicio
-[ ] **A-090:** Testear reasignación en runtime
+[ ] **C-016:** Implementar sistema de rebinding
+[ ] **C-017:** Crear UI de configuración
+[ ] **C-018:** Guardar configuración en PlayerPrefs
+[ ] **C-019:** Cargar configuración al inicio
+[ ] **C-020:** Testear reasignación en runtime
 
 #### Tarea T18: Feedback de Input
-[ ] **A-091:** Añadir indicadores visuales de input
-[ ] **A-092:** Implementar rumble en gamepad
-[ ] **A-093:** Crear efectos de sonido de input
-[ ] **A-094:** Testear feedback en todos los dispositivos
-[ ] **A-095:** Optimizar latencia de input
+[ ] **C-021:** Añadir indicadores visuales de input
+[ ] **C-022:** Implementar rumble en gamepad
+[ ] **C-023:** Crear efectos de sonido de input
+[ ] **C-024:** Testear feedback en todos los dispositivos
+[ ] **C-025:** Optimizar latencia de input
 
 ### DoD Sprint S2
 **El usuario va a poder:**
@@ -230,69 +239,69 @@ El usuario va a poder pasar por portales que cambian su vehículo automáticamen
 ### Fase F3: Portales y Triggers
 
 #### Tarea T19: PortalVehicle
-[ ] **A-096:** Crear script PortalVehicle.cs
-[ ] **A-097:** Implementar OnTriggerEnter
-[ ] **A-098:** Añadir parámetro target (VehicleKind)
-[ ] **A-099:** Configurar invulnerabilidad (invulnSeconds)
-[ ] **A-100:** Crear prefab Portal_Vehicle.prefab
+[ ] **D-001:** Crear script PortalVehicle.cs
+[ ] **D-002:** Implementar OnTriggerEnter
+[ ] **D-003:** Añadir parámetro target (VehicleKind)
+[ ] **D-004:** Configurar invulnerabilidad (invulnSeconds)
+[ ] **D-005:** Crear prefab Portal_Vehicle.prefab
 
 #### Tarea T20: PortalGravity
-[ ] **A-101:** Crear script PortalGravity.cs
-[ ] **A-102:** Implementar cambio de Physics.gravity
-[ ] **A-103:** Añadir parámetro gravity (Vector3)
-[ ] **A-104:** Configurar trigger detection
-[ ] **A-105:** Crear prefab Portal_Gravity.prefab
+[ ] **D-006:** Crear script PortalGravity.cs
+[ ] **D-007:** Implementar cambio de Physics.gravity
+[ ] **D-008:** Añadir parámetro gravity (Vector3)
+[ ] **D-009:** Configurar trigger detection
+[ ] **D-010:** Crear prefab Portal_Gravity.prefab
 
 #### Tarea T21: JumpPad
-[ ] **A-106:** Crear script JumpPad.cs
-[ ] **A-107:** Implementar impulso vertical
-[ ] **A-108:** Configurar parámetro strength
-[ ] **A-109:** Añadir efecto visual básico
-[ ] **A-110:** Crear prefab JumpPad.prefab
+[ ] **D-011:** Crear script JumpPad.cs
+[ ] **D-012:** Implementar impulso vertical
+[ ] **D-013:** Configurar parámetro strength
+[ ] **D-014:** Añadir efecto visual básico
+[ ] **D-015:** Crear prefab JumpPad.prefab
 
 #### Tarea T22: Sistema de Invulnerabilidad
-[ ] **A-111:** Implementar corrutina Invuln() en PlayerVehicleSwitcher
-[ ] **A-112:** Añadir variable invulnerable
-[ ] **A-113:** Configurar duración de invulnerabilidad
-[ ] **A-114:** Añadir efecto visual de invulnerabilidad
-[ ] **A-115:** Testear protección contra daño
+[ ] **D-016:** Implementar corrutina Invuln() en PlayerVehicleSwitcher
+[ ] **D-017:** Añadir variable invulnerable
+[ ] **D-018:** Configurar duración de invulnerabilidad
+[ ] **D-019:** Añadir efecto visual de invulnerabilidad
+[ ] **D-020:** Testear protección contra daño
 
 #### Tarea T23: Efectos Visuales de Portales
-[ ] **A-116:** Crear materiales para portales
-[ ] **A-117:** Añadir partículas básicas
-[ ] **A-118:** Implementar animación de rotación
-[ ] **A-119:** Configurar colores por tipo de portal
-[ ] **A-120:** Testear feedback visual
+[ ] **D-021:** Crear materiales para portales
+[ ] **D-022:** Añadir partículas básicas
+[ ] **D-023:** Implementar animación de rotación
+[ ] **D-024:** Configurar colores por tipo de portal
+[ ] **D-025:** Testear feedback visual
 
 ### Fase F4: Daño y Hazards
 
 #### Tarea T24: Sistema de Salud
-[ ] **A-121:** Crear script Health.cs
-[ ] **A-122:** Implementar current y max health
-[ ] **A-123:** Añadir métodos ApplyFlat() y ApplyPercent()
-[ ] **A-124:** Implementar evento OnDied
-[ ] **A-125:** Vincular con Player
+[ ] **D-026:** Crear script Health.cs
+[ ] **D-027:** Implementar current y max health
+[ ] **D-028:** Añadir métodos ApplyFlat() y ApplyPercent()
+[ ] **D-029:** Implementar evento OnDied
+[ ] **D-030:** Vincular con Player
 
 #### Tarea T25: Hazard System
-[ ] **A-126:** Crear script Hazard.cs
-[ ] **A-127:** Implementar parámetros lethal y percentDamage
-[ ] **A-128:** Configurar OnTriggerEnter
-[ ] **A-129:** Crear prefabs Spike.prefab y Block.prefab
-[ ] **A-130:** Testear diferentes tipos de daño
+[ ] **D-031:** Crear script Hazard.cs
+[ ] **D-032:** Implementar parámetros lethal y percentDamage
+[ ] **D-033:** Configurar OnTriggerEnter
+[ ] **D-034:** Crear prefabs Spike.prefab y Block.prefab
+[ ] **D-035:** Testear diferentes tipos de daño
 
 #### Tarea T26: GameOver System
-[ ] **A-131:** Crear script GameOverManager.cs
-[ ] **A-132:** Implementar lógica de muerte
-[ ] **A-133:** Crear UI GameOverScreen
-[ ] **A-134:** Añadir botón de reinicio
-[ ] **A-135:** Vincular con GameManager
+[ ] **D-036:** Crear script GameOverManager.cs
+[ ] **D-037:** Implementar lógica de muerte
+[ ] **D-038:** Crear UI GameOverScreen
+[ ] **D-039:** Añadir botón de reinicio
+[ ] **D-040:** Vincular con GameManager
 
 #### Tarea T27: Out of Bounds
-[ ] **A-136:** Crear script OutOfBounds.cs
-[ ] **A-137:** Implementar detección de límites
-[ ] **A-138:** Configurar parámetro outOfBoundsY
-[ ] **A-139:** Añadir trigger invisible
-[ ] **A-140:** Testear muerte por OOB
+[ ] **D-041:** Crear script OutOfBounds.cs
+[ ] **D-042:** Implementar detección de límites
+[ ] **D-043:** Configurar parámetro outOfBoundsY
+[ ] **D-044:** Añadir trigger invisible
+[ ] **D-045:** Testear muerte por OOB
 
 ### DoD Sprint S3
 **El usuario va a poder:**
@@ -314,49 +323,110 @@ El usuario va a poder pasar por portales que cambian su vehículo automáticamen
 
 ---
 
-## Sprint S4: Sistema de Vehículos (Semana 5)
+## Sprint S4: Analíticas y Base de Datos (Semana 5)
+
+### Objetivo del Sprint
+El usuario va a poder ver sus progresos de actividad física en tiempo real, recibir feedback sobre calorías quemadas y tiempo de movimiento, acceder a un historial de partidas con métricas de salud, recibir recomendaciones personalizadas para mejorar su actividad física, y sentir que está jugando un videojuego que realmente mejora su salud y bienestar.
+
+### Fase F4: Sistema de Datos de Salud
+
+#### Tarea T19: Configuración de Supabase
+[ ] **E-001:** Configurar proyecto Supabase
+[ ] **E-002:** Crear tablas para datos de usuario y partidas
+[ ] **E-003:** Implementar conexión desde Unity
+[ ] **E-004:** Testear conectividad/permisos
+[ ] **E-005:** Habilitar tiempo real
+
+#### Tarea T20: DataCollector
+[ ] **E-006:** Crear script DataCollector.cs
+[ ] **E-007:** Registrar movimientos y poses detectadas
+[ ] **E-008:** Implementar tracking de tiempo de reacción
+[ ] **E-009:** Calcular calorías quemadas (estimación)
+[ ] **E-010:** Guardar métricas de actividad física
+
+#### Tarea T21: HealthMetrics
+[ ] **E-011:** Crear script HealthMetrics.cs
+[ ] **E-012:** Implementar cálculo de calorías por movimiento
+[ ] **E-013:** Añadir métricas de tiempo sedentario vs activo
+[ ] **E-014:** Calcular beneficios cardiovasculares
+[ ] **E-015:** Generar recomendaciones de salud
+
+#### Tarea T22: AnalyticsUI
+[ ] **E-016:** Crear pantalla de analíticas post-partida
+[ ] **E-017:** Mostrar calorías quemadas y tiempo activo
+[ ] **E-018:** Visualizar progreso histórico
+[ ] **E-019:** Añadir comparativas con objetivos
+[ ] **E-020:** Implementar gráficos de tendencias
+
+#### Tarea T23: HealthDashboard
+[ ] **E-021:** Crear dashboard principal de salud
+[ ] **E-022:** Mostrar estadísticas semanales/mensuales
+[ ] **E-023:** Añadir logros y badges de salud
+[ ] **E-024:** Implementar notificaciones de bienestar
+[ ] **E-025:** Crear sistema de objetivos personalizados
+
+### DoD Sprint S4
+**El usuario va a poder:**
+- Ver cuántas calorías quemó en cada partida
+- Acceder a un historial completo de su actividad física
+- Recibir feedback inmediato sobre su tiempo de movimiento
+- Ver recomendaciones personalizadas para mejorar su salud
+- Sentir que está jugando un videojuego que realmente mejora su bienestar
+- Comparar su progreso con objetivos de salud establecidos
+
+**Checklist técnico:**
+- [ ] Conexión a Supabase funcional y segura
+- [ ] Datos de actividad física se guardan correctamente
+- [ ] Cálculo de calorías y métricas de salud implementado
+- [ ] UI de analíticas muestra datos relevantes
+- [ ] Dashboard de salud funcional y atractivo
+- [ ] Sistema de recomendaciones personalizadas
+
+---
+
+## Sprint S5: Sistema de Vehículos (Semana 6)
 
 ### Objetivo del Sprint
 El usuario va a poder cambiar entre dos tipos de vehículos: un carro (que salta) y una nave (que vuela), controlar la nave subiendo y bajando con las teclas W y S, ver en la pantalla qué vehículo está usando actualmente, jugar con físicas estables sin que los vehículos se comporten de forma extraña y experimentar dos estilos de juego diferentes en el mismo personaje.
 
-### Fase F4: Player (Ship)
+### Fase F5: Player (Ship)
 
 #### Tarea T28: ShipController
-[ ] **A-141:** Crear script ShipController.cs
-[ ] **A-142:** Implementar ascenso continuo (W/Space)
-[ ] **A-143:** Implementar descenso (S)
-[ ] **A-144:** Configurar límites de velocidad vertical
-[ ] **A-145:** Añadir auto-forward igual que Car
+[ ] **F-001:** Crear script ShipController.cs
+[ ] **F-002:** Implementar ascenso continuo (W/Space)
+[ ] **F-003:** Implementar descenso (S)
+[ ] **F-004:** Configurar límites de velocidad vertical
+[ ] **F-005:** Añadir auto-forward igual que Car
 
 #### Tarea T29: Físicas del Ship
-[ ] **A-146:** Configurar Rigidbody para Ship
-[ ] **A-147:** Implementar verticalAccel y maxVerticalSpeed
-[ ] **A-148:** Añadir límites de altura (shipMaxHeight)
-[ ] **A-149:** Configurar airResistance para Ship
-[ ] **A-150:** Testear físicas de ascenso/descenso
+[ ] **F-006:** Configurar Rigidbody para Ship
+[ ] **F-007:** Implementar verticalAccel y maxVerticalSpeed
+[ ] **F-008:** Añadir límites de altura (shipMaxHeight)
+[ ] **F-009:** Configurar airResistance para Ship
+[ ] **F-010:** Testear físicas de ascenso/descenso
 
 #### Tarea T30: PlayerVehicleSwitcher
-[ ] **A-151:** Crear script PlayerVehicleSwitcher.cs
-[ ] **A-152:** Implementar referencias a Car y Ship
-[ ] **A-153:** Crear método SwitchTo(VehicleKind)
-[ ] **A-154:** Implementar activación/desactivación de controladores
-[ ] **A-155:** Añadir evento OnVehicleChanged
+[ ] **F-011:** Crear script PlayerVehicleSwitcher.cs
+[ ] **F-012:** Implementar referencias a Car y Ship
+[ ] **F-013:** Crear método SwitchTo(VehicleKind)
+[ ] **F-014:** Implementar activación/desactivación de controladores
+[ ] **F-015:** Añadir evento OnVehicleChanged
 
 #### Tarea T31: Integración de Vehículos
-[ ] **A-156:** Añadir ShipController al Player prefab
-[ ] **A-157:** Configurar PlayerVehicleSwitcher
-[ ] **A-158:** Testear conmutación manual entre vehículos
-[ ] **A-159:** Ajustar parámetros de ambos vehículos
-[ ] **A-160:** Verificar estabilidad física
+[ ] **F-016:** Añadir ShipController al Player prefab
+[ ] **F-017:** Configurar PlayerVehicleSwitcher
+[ ] **F-018:** Testear conmutación manual entre vehículos
+[ ] **F-019:** Ajustar parámetros de ambos vehículos
+[ ] **F-020:** Verificar estabilidad física
 
 #### Tarea T32: UI de Vehículo Actual
-[ ] **A-161:** Añadir icono de vehículo al HUD
-[ ] **A-162:** Crear script VehicleIconUI.cs
-[ ] **A-163:** Vincular con PlayerVehicleSwitcher
-[ ] **A-164:** Testear cambio visual de icono
-[ ] **A-165:** Ajustar diseño del HUD
+[ ] **F-021:** Añadir icono de vehículo al HUD
+[ ] **F-022:** Crear script VehicleIconUI.cs
+[ ] **F-023:** Vincular con PlayerVehicleSwitcher
+[ ] **F-024:** Testear cambio visual de icono
+[ ] **F-025:** Ajustar diseño del HUD
 
-### DoD Sprint S4
+### DoD Sprint S5
 **El usuario va a poder:**
 - Cambiar entre dos tipos de vehículos: un carro (que salta) y una nave (que vuela)
 - Controlar la nave subiendo y bajando con las teclas W y S
@@ -374,49 +444,49 @@ El usuario va a poder cambiar entre dos tipos de vehículos: un carro (que salta
 
 ---
 
-## Sprint S5: Datos y Configuración (Semana 6)
+## Sprint S6: Datos y Configuración (Semana 7)
 
 ### Objetivo del Sprint
 El usuario va a poder jugar en niveles que se configuran automáticamente sin necesidad de programar, experimentar diferentes configuraciones de gravedad y parámetros, disfrutar de un juego más estable y configurable, mientras que los desarrolladores pueden crear nuevos niveles fácilmente sin tocar código y el juego se adapta automáticamente a diferentes configuraciones.
 
-### Fase F5: Datos de Nivel
+### Fase F6: Datos de Nivel
 
 #### Tarea T33: LevelData ScriptableObject
-[ ] **A-166:** Crear script LevelData.cs
-[ ] **A-167:** Implementar estructuras de datos (PortalData, HazardData, etc.)
-[ ] **A-168:** Añadir CreateAssetMenu
-[ ] **A-169:** Configurar campos serializables
-[ ] **A-170:** Crear asset Level_01.asset
+[ ] **G-001:** Crear script LevelData.cs
+[ ] **G-002:** Implementar estructuras de datos (PortalData, HazardData, etc.)
+[ ] **G-003:** Añadir CreateAssetMenu
+[ ] **G-004:** Configurar campos serializables
+[ ] **G-005:** Crear asset Level_01.asset
 
 #### Tarea T34: LevelLoader
-[ ] **A-171:** Crear script LevelLoader.cs
-[ ] **A-172:** Implementar carga de LevelData
-[ ] **A-173:** Aplicar configuración de gravedad
-[ ] **A-174:** Posicionar player en spawn
-[ ] **A-175:** Instanciar elementos del nivel
+[ ] **G-006:** Crear script LevelLoader.cs
+[ ] **G-007:** Implementar carga de LevelData
+[ ] **G-008:** Aplicar configuración de gravedad
+[ ] **G-009:** Posicionar player en spawn
+[ ] **G-010:** Instanciar elementos del nivel
 
 #### Tarea T35: GlobalConfig
-[ ] **A-176:** Crear script GlobalConfig.cs
-[ ] **A-177:** Definir parámetros tunables
-[ ] **A-178:** Crear asset GlobalConfig.asset
-[ ] **A-179:** Implementar ApplyGlobalConfig.cs
-[ ] **A-180:** Vincular con controladores
+[ ] **G-011:** Crear script GlobalConfig.cs
+[ ] **G-012:** Definir parámetros tunables
+[ ] **G-013:** Crear asset GlobalConfig.asset
+[ ] **G-014:** Implementar ApplyGlobalConfig.cs
+[ ] **G-015:** Vincular con controladores
 
 #### Tarea T36: Instanciación Dinámica
-[ ] **A-181:** Crear prefabs para todos los elementos
-[ ] **A-182:** Implementar instanciación desde LevelData
-[ ] **A-183:** Configurar posiciones y parámetros
-[ ] **A-184:** Testear carga completa de nivel
-[ ] **A-185:** Optimizar rendimiento de instanciación
+[ ] **G-016:** Crear prefabs para todos los elementos
+[ ] **G-017:** Implementar instanciación desde LevelData
+[ ] **G-018:** Configurar posiciones y parámetros
+[ ] **G-019:** Testear carga completa de nivel
+[ ] **G-020:** Optimizar rendimiento de instanciación
 
 #### Tarea T37: Validación de Datos
-[ ] **A-186:** Implementar validación en LevelData
-[ ] **A-187:** Añadir checks de rangos válidos
-[ ] **A-188:** Crear editor custom si necesario
-[ ] **A-189:** Testear casos edge
-[ ] **A-190:** Documentar estructura de datos
+[ ] **G-021:** Implementar validación en LevelData
+[ ] **G-022:** Añadir checks de rangos válidos
+[ ] **G-023:** Crear editor custom si necesario
+[ ] **G-024:** Testear casos edge
+[ ] **G-025:** Documentar estructura de datos
 
-### DoD Sprint S5
+### DoD Sprint S6
 **El usuario va a poder:**
 - Jugar en niveles que se configuran automáticamente sin necesidad de programar
 - Experimentar diferentes configuraciones de gravedad y parámetros
@@ -434,49 +504,49 @@ El usuario va a poder jugar en niveles que se configuran automáticamente sin ne
 
 ---
 
-## Sprint S6: Pulido y Optimización (Semana 7)
+## Sprint S7: Pulido y Optimización (Semana 8)
 
 ### Objetivo del Sprint
 El usuario va a poder disfrutar de efectos visuales atractivos (partículas, animaciones), escuchar efectos de sonido y música que mejoran la experiencia, usar una interfaz pulida y fácil de entender, jugar sin problemas de rendimiento (60 FPS estables), experimentar un juego completo sin errores molestos y sentir que está jugando un producto terminado y profesional.
 
-### Fase F6: Pulido General
+### Fase F7: Pulido General
 
 #### Tarea T38: Efectos Visuales
-[ ] **A-191:** Implementar partículas para portales
-[ ] **A-192:** Añadir efectos de salto y movimiento
-[ ] **A-193:** Crear efectos de daño y muerte
-[ ] **A-194:** Implementar post-processing básico
-[ ] **A-195:** Optimizar efectos para rendimiento
+[ ] **H-001:** Implementar partículas para portales
+[ ] **H-002:** Añadir efectos de salto y movimiento
+[ ] **H-003:** Crear efectos de daño y muerte
+[ ] **H-004:** Implementar post-processing básico
+[ ] **H-005:** Optimizar efectos para rendimiento
 
 #### Tarea T39: Sistema de Audio
-[ ] **A-196:** Crear AudioManager.cs
-[ ] **A-197:** Implementar SFX para acciones
-[ ] **A-198:** Añadir música de fondo
-[ ] **A-199:** Configurar mezcla de audio
-[ ] **A-200:** Testear en diferentes dispositivos
+[ ] **H-006:** Crear AudioManager.cs
+[ ] **H-007:** Implementar SFX para acciones
+[ ] **H-008:** Añadir música de fondo
+[ ] **H-009:** Configurar mezcla de audio
+[ ] **H-010:** Testear en diferentes dispositivos
 
 #### Tarea T40: UI/UX Final
-[ ] **A-201:** Diseñar HUD completo
-[ ] **A-202:** Crear menú principal
-[ ] **A-203:** Implementar pantallas de transición
-[ ] **A-204:** Añadir animaciones de UI
-[ ] **A-205:** Testear usabilidad
+[ ] **H-011:** Diseñar HUD completo
+[ ] **H-012:** Crear menú principal
+[ ] **H-013:** Implementar pantallas de transición
+[ ] **H-014:** Añadir animaciones de UI
+[ ] **H-015:** Testear usabilidad
 
 #### Tarea T41: Optimización
-[ ] **A-206:** Profilar rendimiento
-[ ] **A-207:** Optimizar scripts críticos
-[ ] **A-208:** Reducir draw calls
-[ ] **A-209:** Optimizar física
-[ ] **A-210:** Testear en hardware objetivo
+[ ] **H-016:** Profilar rendimiento
+[ ] **H-017:** Optimizar scripts críticos
+[ ] **H-018:** Reducir draw calls
+[ ] **H-019:** Optimizar física
+[ ] **H-020:** Testear en hardware objetivo
 
 #### Tarea T42: Testing Final
-[ ] **A-211:** Testing de funcionalidad completa
-[ ] **A-212:** Testing de input (teclado + Kinect)
-[ ] **A-213:** Testing de rendimiento
-[ ] **A-214:** Testing de usabilidad
-[ ] **A-215:** Corrección de bugs finales
+[ ] **H-021:** Testing de funcionalidad completa
+[ ] **H-022:** Testing de input (teclado + Kinect)
+[ ] **H-023:** Testing de rendimiento
+[ ] **H-024:** Testing de usabilidad
+[ ] **H-025:** Corrección de bugs finales
 
-### DoD Sprint S6
+### DoD Sprint S7
 **El usuario va a poder:**
 - Disfrutar de efectos visuales atractivos (partículas, animaciones)
 - Escuchar efectos de sonido y música que mejoran la experiencia
@@ -495,42 +565,42 @@ El usuario va a poder disfrutar de efectos visuales atractivos (partículas, ani
 
 ---
 
-## Sprint S7: Entrega Final (Semana 8)
+## Sprint S8: Entrega Final (Semana 9)
 
 ### Objetivo del Sprint
 El usuario va a poder descargar e instalar el juego fácilmente, encontrar documentación clara sobre cómo jugar, configurar Kinect siguiendo guías paso a paso, resolver problemas comunes con la guía de troubleshooting, disfrutar de un juego completamente funcional y entregable, mientras que los desarrolladores tienen todo organizado para futuras mejoras.
 
-### Fase F7: Entrega Final
+### Fase F8: Entrega Final
 
 #### Tarea T43: Build Final
-[ ] **A-216:** Configurar build settings
-[ ] **A-217:** Optimizar para plataforma objetivo
-[ ] **A-218:** Generar build ejecutable
-[ ] **A-219:** Testear build final
-[ ] **A-220:** Crear instalador si es necesario
+[ ] **I-001:** Configurar build settings
+[ ] **I-002:** Optimizar para plataforma objetivo
+[ ] **I-003:** Generar build ejecutable
+[ ] **I-004:** Testear build final
+[ ] **I-005:** Crear instalador si es necesario
 
 #### Tarea T44: Documentación Final
-[ ] **A-221:** Actualizar README.md
-[ ] **A-222:** Crear manual de usuario
-[ ] **A-223:** Documentar configuración de Kinect
-[ ] **A-224:** Crear guía de instalación
-[ ] **A-225:** Documentar troubleshooting
+[ ] **I-006:** Actualizar README.md
+[ ] **I-007:** Crear manual de usuario
+[ ] **I-008:** Documentar configuración de Kinect
+[ ] **I-009:** Crear guía de instalación
+[ ] **I-010:** Documentar troubleshooting
 
 #### Tarea T45: Assets Finales
-[ ] **A-226:** Organizar assets finales
-[ ] **A-227:** Crear prefabs finales
-[ ] **A-228:** Configurar ScriptableObjects finales
-[ ] **A-229:** Optimizar assets para build
-[ ] **A-230:** Verificar integridad de assets
+[ ] **I-011:** Organizar assets finales
+[ ] **I-012:** Crear prefabs finales
+[ ] **I-013:** Configurar ScriptableObjects finales
+[ ] **I-014:** Optimizar assets para build
+[ ] **I-015:** Verificar integridad de assets
 
 #### Tarea T46: Presentación
-[ ] **A-231:** Crear video de demostración
-[ ] **A-232:** Preparar presentación del proyecto
-[ ] **A-233:** Documentar características implementadas
-[ ] **A-234:** Preparar Q&A
-[ ] **A-235:** Revisar entrega completa
+[ ] **I-016:** Crear video de demostración
+[ ] **I-017:** Preparar presentación del proyecto
+[ ] **I-018:** Documentar características implementadas
+[ ] **I-019:** Preparar Q&A
+[ ] **I-020:** Revisar entrega completa
 
-### DoD Sprint S7
+### DoD Sprint S8
 **El usuario va a poder:**
 - Descargar e instalar el juego fácilmente
 - Encontrar documentación clara sobre cómo jugar
@@ -557,10 +627,11 @@ El usuario va a poder descargar e instalar el juego fácilmente, encontrar docum
 | S1 | Kinect, detección de poses | Input dual funcional |
 | S2 | Input System, pausa, reasignación | Input completo |
 | S3 | Portales, hazards, sistema de daño | Interactividad completa |
-| S4 | Sistema de vehículos, conmutación | Car ↔ Ship estable |
-| S5 | LevelData, configuración parametrizable | Niveles desde assets |
-| S6 | Efectos, audio, UI, optimización | Experiencia pulida |
-| S7 | Build final, documentación | Proyecto entregable |
+| S4 | Analíticas, Supabase, métricas de salud | Videojuego serio funcional |
+| S5 | Sistema de vehículos, conmutación | Car ↔ Ship estable |
+| S6 | LevelData, configuración parametrizable | Niveles desde assets |
+| S7 | Efectos, audio, UI, optimización | Experiencia pulida |
+| S8 | Build final, documentación | Proyecto entregable |
 
 ## Notas de Desarrollo
 
@@ -569,3 +640,19 @@ El usuario va a poder descargar e instalar el juego fácilmente, encontrar docum
 - **Testing:** Cada DoD debe validarse antes de continuar
 - **Flexibilidad:** El plan puede ajustarse según necesidades
 - **Colaboración:** Múltiples desarrolladores pueden trabajar en diferentes tareas
+
+---
+
+## Consideraciones de Diseño
+
+### **Cambio de Vehículos por Poses (No Portales)**
+Si el Kinect es muy bueno reconociendo poses, entonces no sería necesario usar portales. Con cambiar de pose se cambia de vehículo y se puede sobrevivir en dicho entorno (tierra/agua). Esto simplifica la mecánica y la hace más intuitiva para actividad física.
+
+### **Nitros en lugar de JumpPads**
+Los pads realmente son nitros que permiten al auto meter acelerón en el aire o al submarino subir muy rápido. Esto añade más dinamismo y requiere más movimiento físico del usuario.
+
+### **Geometría Voxel y Navegación Diagonal**
+La geometría del escenario pueden ser vóxels, el vehículo navega en diagonal al escenario y así es más fácil colocar los bloques pues la esquina/punta es fácil de hacer sea la colisión. Esto simplifica el diseño de niveles y mejora el rendimiento.
+
+### **Enfoque en Videojuego Serio**
+Este es un videojuego serio que busca mejorar la salud de las personas. No es solo entretenimiento, sino una herramienta para actividad física, evitar enfermedades por sedentarismo, aliviar articulaciones y promover el movimiento saludable.
