@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c3326c775c5bcbe4e8ce9011ff63e8b4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 302113
+  packageName: VFX Graph - Golden Coin
+  packageVersion: 1.0
+  assetPath: Assets/TwoUncleVFX/Settings/TwoUncleVFX_UniversalRenderPipelineGlobalSettings.asset
+  uploadId: 707335
